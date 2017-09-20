@@ -1,0 +1,3 @@
+easyrsa revoke ubuntu
+easyrsa gen-crl
+systemctl restart openvpn-server@openvpn
