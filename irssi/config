@@ -16,6 +16,7 @@ channels = (
   { name = "#ansible"; chatnet = "sysarmy"; autojoin = "Yes"; },
   { name = "#reddit-argentina"; chatnet = "sysarmy"; autojoin = "Yes"; },
   { name = "#reddit-homelab"; chatnet = "sysarmy"; autojoin = "Yes"; },
+  { name = "##DevOps"; chatnet = "sysarmy"; autojoin = "Yes"; },
 );
 
 aliases = {
