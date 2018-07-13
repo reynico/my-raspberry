@@ -1,22 +1,34 @@
 servers = (
+#  {
+#    address = "giba.space";
+#    chatnet = "mfsec";
+#    port = "6697";
+#    use_ssl = "yes";
+#    ssl_verify = "no";
+#    autoconnect = "yes";
+#  },
   { 
      address = "irc.freenode.net"; 
-     chatnet = "sysarmy"; 
-     port = "6667"; 
+     chatnet = "freenode"; 
+     port = "6697"; 
+     use_ssl = "yes";
+     ssl_verify = "yes";
+     autoconnect = "yes";
   }
 );
 
 chatnets = 
    { 
-     sysarmy = { type = "IRC"; }; 
+     sysarmy = { type = "IRC"; autosendcmd = "/msg nickserv identify Thepassword123; wait 4000";}; 
    };
 
 channels = (
-  { name = "#sysarmy"; chatnet = "sysarmy"; autojoin = "Yes"; },
-  { name = "#ansible"; chatnet = "sysarmy"; autojoin = "Yes"; },
-  { name = "#reddit-argentina"; chatnet = "sysarmy"; autojoin = "Yes"; },
-  { name = "#reddit-homelab"; chatnet = "sysarmy"; autojoin = "Yes"; },
-  { name = "##DevOps"; chatnet = "sysarmy"; autojoin = "Yes"; },
+  { name = "#sysarmy"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#ansible"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#reddit-argentina"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#reddit-homelab"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "##DevOps"; chatnet = "freenode"; autojoin = "Yes"; },
+#  { name = "#mfsec"; chatnet = "mfsec"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -283,6 +295,7 @@ settings = {
   "fe-common/core" = {
     theme = "chaves";
     autolog = "yes";
+    #autolog_ignore_targets = "#mfsec";
   };
 };
 logs = { };
