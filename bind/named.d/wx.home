@@ -1,0 +1,16 @@
+; pi.home
+$TTL 3600
+wx.home. 	IN	SOA	a.root-servers.net. me@reyni.co. (
+			2017041301  ; Serial
+			3H          ; refresh after 3 hours
+			1H          ; retry after 1 hour
+			1W          ; expire after 1 week
+			1D)         ; minimum TTL of 1 day
+
+; Name Server
+		IN	NS	a.root-servers.net.	; VeriSign verteilt (anycast)
+		IN	NS	e.root-servers.net.	; ns.nasa.gov, Mountain View, Kalifornien, USA
+		IN	NS	l.root-servers.net.	; ICANN verteilt (anycast)
+wx.home.	IN 	A	192.168.1.5
+wx		IN 	A	192.168.1.5
+*		IN 	A	192.168.1.5
