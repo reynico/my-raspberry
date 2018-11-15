@@ -1,3 +1,6 @@
+# Update local library
 00 03 * * * mopidyctl local scan
+# Restart mopidy to avoid random hangs
 00 04 * * * systemctl restart mopidy
+# Update adblock zonefile on Bind
 00 00 * * * python3 /etc/named.d/update-zonefile.py /etc/named.d/adblock.home adblock.home 1>/var/log/adblock-update.log 2>/var/log/adblock-update.err
