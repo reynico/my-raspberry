@@ -28,6 +28,8 @@ channels = (
   { name = "#reddit-argentina"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#reddit-homelab"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "##DevOps"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#blockstream-satellite"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#linux"; chatnet = "freenode"; autojoin = "Yes"; },
 #  { name = "#mfsec"; chatnet = "mfsec"; autojoin = "Yes"; }
 );
 
